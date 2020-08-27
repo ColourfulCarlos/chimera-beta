@@ -6,16 +6,16 @@ body {
 }
 
 #header {
-   background: linear-gradient(to right, #0b0f1d, #202537);
+   background: linear-gradient(to right, #1c1c1c, #212121, #2d2d2d);
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
    padding: 0 3rem;
-   width: 100%;
-   margin: 0%;
-   position: fixed;
+   margin: auto;
+   width: auto;
+   height: 50px;
    align-items: center;
-   align-content: center;
+   justify-content: right;
    
 }
 
@@ -36,13 +36,15 @@ body {
     -webkit-text-fill-color: transparent;
     font-family: 'Marvel', sans-serif;
     text-transform: uppercase;
+    font-weight: 700;
     letter-spacing: 1.5px;
     font-size: 20px;
     
 }
 .menu {
-    width: 450px;
+    width: 200px;
     flex: auto;
+    align-items: flex-end;
 }
 a {
     text-decoration: none;
@@ -58,14 +60,73 @@ a:hover {
     -webkit-text-fill-color: transparent;
     font-family: 'Marvel', sans-serif;
     font-size: 20px;
+    font-weight: bold;
     list-style-type: none;
-    margin: 0;
-    border: 0;
-    padding: 0;
-
 }
 
 .menu li {
     padding-right: .6em;
     margin: 0.2px 0;
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    grid-gap: 1px;
+    background: #111b31;
+    overflow: hidden;
+  }
+  
+    .div1 { grid-area: 1 / 4 / 4 / 5; }
+    .div2 { grid-area: 1 / 1 / 2 / 2; }
+    .div3 { grid-area: 1 / 2 / 2 / 3; }
+    .div4 { grid-area: 1 / 3 / 2 / 4; }
+    .div5 { grid-area: 2 / 1 / 3 / 2; }
+    .div6 { grid-area: 2 / 2 / 3 / 3; }
+    .div7 { grid-area: 2 / 3 / 3 / 4; }
+    .div8 { grid-area: 3 / 1 / 4 / 2; }
+    .div9 { grid-area: 3 / 2 / 4 / 3; }
+    .div10 { grid-area: 3 / 3 / 4 / 4; } 
+  
+    .title {
+    color: #e7e8ec;
+    font-size: 42px;
+    font-family: "Marvel", sans-serif;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .sub-title {
+    color: #cbd1dd;
+    font-size: 20px;
+    font-family: "Marvel", sans-serif;
+    text-align: right;
+    vertical-align: bottom;
+    line-height: 90%;
+  }
+  
+  .name,
+  .description {
+    text-align: right;
+    vertical-align: middle;
+    font-family: "Marvel", sans-serif;
+  }
+  
+  .name {
+    color: #e7e8ec;
+    font-size: 20px;
+    font-weight: 700;
+    vertical-align: middle;
+  }
+  
+  .description {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #cbd1dd;
+    font-family: "Marvel", sans-serif;
+    text-align: right;
+    letter-spacing: -0.5px;
+    line-height: 90%;
+  }
