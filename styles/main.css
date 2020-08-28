@@ -5,130 +5,169 @@ body {
     cursor: default;
 }
 
-#header {
-   background: linear-gradient(to right, #1c1c1c, #212121, #2d2d2d);
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   height: auto;
-   align-items: center;
+  #header {
+     background: linear-gradient(to right, #1c1c1c, #212121, #2d2d2d);
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     height: auto;
+     align-items: center;
    
-}
+  }
+    .options {
+      align-self: center;
+      justify-content: center;
+      margin: 10px;
+    }
 
-.logocallback {
-    display:flex;
-    flex-flow: row;
-    width: -moz-min-content;
-    width: min-content;
-    flex: auto;
-    margin-left: 45px;
-    align-self: center;
-}
-.options {
-    align-self: center;
-    justify-content: center;
-    margin: 10px;
-}
-.logocallback h1 { 
-    background: -webkit-linear-gradient(#e7e8ec, #b8bfcb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Marvel', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    font-size: 25px;
-    text-shadow: 1px 1.5px 2px rgba(203, 192, 184, 0.6);
+    .logocallback {
+       display:flex;
+       flex-flow: row;
+       width: -moz-min-content;
+       width: min-content;
+       flex: auto;
+       margin-left: 45px;
+       align-self: center;
+    }
+
+      .logocallback h1 { 
+          background: -webkit-linear-gradient(#e7e8ec, #b8bfcb);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: 'Marvel', sans-serif;
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          font-size: 25px;
+          text-shadow: 1px 1px 2px rgba(203, 192, 184, 0.6);
     
-}
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: -moz-max-content;
-    width: max-content;
-    padding: 0;
-    margin-right: 45px;
-}
-a {
-    text-decoration: none;
-}
-a:hover {
-    color: #d10100;
-}
-.menu ul {
-    display: flex;
-    flex-flow: row;
-    background: -webkit-linear-gradient(#e7e8ec, #b8bfcb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Marvel', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    list-style-type: none;
-}
+      }
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: -moz-max-content;
+      width: max-content;
+      padding: 0;
+      margin-right: 45px;
+    }
+    
+      .menu a {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        background: -webkit-linear-gradient(#e7e8ec, #b8bfcb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Marvel', sans-serif;
+        font-size: 19px;
+        font-weight: bold;
+        list-style-type: none;
+        text-decoration: none;
+        padding-right: .6em;
+        margin: 0.2px 0;
+        text-shadow: 1px 1px 2px rgba(203, 192, 184, 0.6)
+      }
+      a:hover {
+        color: #d10100;
+      }
 
-.menu li {
-    padding-right: .6em;
-    margin: 0.2px 0;
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr); 
-    grid-gap: auto;
-    background: #111b31;
-    overflow: hidden;
-    border-left-style: solid;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 50px;
+  .parent {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr); 
+      background: #111b31;
+      overflow: hidden;
+      padding:50px 125px 0 125px;
   }
   
     .div1 { 
       grid-area: 1 / 4 / 4 / 5; 
       width: 400px;
     }
-    .div2 { grid-area: 1 / 1 / 2 / 2; 
+    .tip {
       width: 200px;
       height: 90px;
     }
-    .div3 { grid-area: 1 / 2 / 2 / 3;
-      width: 200px;
-      height: 90px;
+    .border {
+      padding-left: 10px;
+      border-left: 2px solid #e7e8ec;
     }
-    .div4 { grid-area: 1 / 3 / 2 / 4; 
-      width: 200px;
-      height: 90px;
-    }
-    .div5 { grid-area: 2 / 1 / 3 / 2;
-      width: 200px;
-      height: 90px;
-    }
-    .div6 { grid-area: 2 / 2 / 3 / 3; 
-      width: 200px;
-      height: 90px;
-    }
-    .div7 { grid-area: 2 / 3 / 3 / 4; 
-      width: 200px;
-      height: 90px;
-    }
-    .div8 { grid-area: 3 / 1 / 4 / 2; 
-      width: 200px;
-      height: 90px;
-    }
-    .div9 { grid-area: 3 / 2 / 4 / 3;
-      width: 200px;
-      height: 90px;
-    }
-    .div10 { grid-area: 3 / 3 / 4 / 4;
-      width: 200px;
-      height: 90px;
-    } 
   
-    .title {
-    color: #e7e8ec;
+      .title {
+      color: #e7e8ec;
+      font-size: 40px;
+      font-family: "Marvel", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      height:50px;
+      margin: 20px 0 20px 0;
+      text-shadow: 1px 1px 2px rgba(203, 192, 184, 0.6);
+      }
+  
+      .sub-title {
+        color: #B1CFD2;
+        font-size: 16px;
+        font-family: "Play", sans-serif;
+        text-align: center;
+        font-weight: 500;
+        vertical-align: bottom;
+        line-height: 90%;
+        height: 35px;
+        margin: 0;
+      }
+  
+      img {
+        max-width: 30%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .name,
+      .description {
+        text-align: right;
+        vertical-align: middle;
+      }
+  
+      .name {
+        color: #e7e8ec;
+        font-size: 19px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        margin: 20px 0 20px 0;
+        width: 150;
+        height: 5px;
+        text-shadow: 1px 1px 2px rgba(203, 192, 184, 0.6);
+      }
+  
+      .description {
+        width: 200px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #B1CFD2;
+        font-family: "Play", sans-serif;
+        text-align: right;
+        letter-spacing: -0.5px;
+        line-height: 90%;
+        margin: 20px 0 20px 0;
+      }
+        
+  #info {
+    background: #B8BFCB;
+    height: auto;
+    padding:50px 125px 0 125px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 2px;
+  }
+
+   .todo { grid-area: 1 / 2 / 4 / 3; } 
+   .what {
+    color: #2D2D2D;
     font-size: 40px;
     font-family: "Marvel", sans-serif;
     text-align: center;
@@ -136,55 +175,13 @@ a:hover {
     font-weight: bold;
     height:50px;
     margin: 20px 0 20px 0;
-    text-shadow: 1px 1.5px 2px rgba(203, 192, 184, 0.6);
-  }
-  
-  .sub-title {
-    color: #b0aead;
+   }
+   .text {
     font-size: 16px;
-    font-family: "Play", sans-serif;
-    text-align: center;
-    font-weight: 500;
-    vertical-align: bottom;
-    line-height: 90%;
-    height: 35px;
-    margin: 0 0 0 0;
-  }
-  
-  img {
-    max-width: 30%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .name,
-  .description {
-    text-align: right;
-    vertical-align: middle;
-  }
-  
-  .name {
-    color: #e7e8ec;
-    font-size: 19px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    vertical-align: middle;
-    margin: 20px 0 20px 0;
-    width: 150;
-    height: 5px;
-    text-shadow: 1px 1px 2px rgba(203, 192, 184, 0.6);
-  }
-  
-  .description {
-    width: 200px;
-    height: 50px;
-    font-size: 14px;
     font-weight: 400;
-    color: #b0aead;
+    color: #4A6DBF;
     font-family: "Play", sans-serif;
-    text-align: right;
+    text-align: left;
     letter-spacing: -0.5px;
     line-height: 90%;
-    margin: 20px 0 20px 0;
-  }
+   }
