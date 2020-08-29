@@ -56,9 +56,7 @@ body {
         display: flex;
         flex-flow: row;
         justify-content: flex-end;
-        background: -webkit-linear-gradient(#e7e8ec, #b8bfcb);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #B8BFCB;
         font-family: 'Marvel', sans-serif;
         font-size: 19px;
         font-weight: bold;
@@ -68,15 +66,21 @@ body {
         margin: 0.2px 0;
         text-shadow: 1px 1px 2px rgba(203, 192, 184, 0.6)
       }
-      a:hover {
-        color: #d10100;
+
+      .menu a:hover {
+        color: #DCDFE5;
+      }
+
+      .border {
+        padding-left: 10px;
+        border-left: 2px solid #e7e8ec;
       }
 
   .parent {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, 1fr); 
-      background: #111b31;
+      background: #20315B;
       overflow: hidden;
       padding:50px 125px 0 125px;
   }
@@ -84,15 +88,13 @@ body {
     .div1 { 
       grid-area: 1 / 4 / 4 / 5; 
       width: 400px;
+      height: 270px;
     }
     .tip {
       width: 200px;
       height: 90px;
     }
-    .border {
-      padding-left: 10px;
-      border-left: 2px solid #e7e8ec;
-    }
+
   
       .title {
       color: #e7e8ec;
@@ -101,7 +103,7 @@ body {
       text-align: center;
       text-transform: uppercase;
       font-weight: bold;
-      height:50px;
+      height:35px;
       margin: 20px 0 20px 0;
       text-shadow: 1px 1px 2px rgba(203, 192, 184, 0.6);
       }
@@ -165,9 +167,11 @@ body {
     grid-row-gap: 2px;
   }
 
-   .todo { grid-area: 1 / 2 / 4 / 3; } 
+   .todo { grid-area: 1 / 2 / 4 / 3;
+    width: auto;
+   } 
    .what {
-    color: #2D2D2D;
+    color: #15213C;
     font-size: 40px;
     font-family: "Marvel", sans-serif;
     text-align: center;
@@ -179,9 +183,13 @@ body {
    .text {
     font-size: 16px;
     font-weight: 400;
-    color: #4A6DBF;
+    color: #2D2D2D;
     font-family: "Play", sans-serif;
-    text-align: left;
+    text-align: justify;
     letter-spacing: -0.5px;
     line-height: 90%;
+
+   }
+   .input {
+     width: 450px;
    }
