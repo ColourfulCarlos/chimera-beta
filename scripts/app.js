@@ -1,3 +1,5 @@
+var express = require('express');
+var path = require('path');
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -12,3 +14,5 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+app.use(express.static(path.join(__dirname, 'public')));
